@@ -1,0 +1,9 @@
+version="0.1"
+tags={
+	"Gameplay"
+	"Historical"
+	"Technologies"
+}
+name="Roachstorical"
+picture="thumbnail.png"
+supported_version="1.11.1"
