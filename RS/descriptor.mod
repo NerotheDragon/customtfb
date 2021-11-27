@@ -4,6 +4,6 @@ tags={
 	"Historical"
 	"Technologies"
 }
-name="Roachstorical"
+name="tfbfix"
 picture="thumbnail.png"
 supported_version="1.11.1"
