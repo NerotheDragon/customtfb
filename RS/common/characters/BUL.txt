@@ -1631,9 +1631,89 @@ characters = {
 		}
 	}
 
-	
+	BUL_konstantin_muraviev = {
+		instance = {
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = BUL_konstantin_muraviev
+				allowed = {
+					has_dlc = "Battle for the Bosporus"
+					original_tag = BUL
+				}
+				available = {
+					
+				}
+				traits = {
+					compassionate_gentleman 
+				}
+				ai_will_do = {
+					base = 1.000
+				}
+			}
+			name = BUL_konstantin_muraviev
+			portraits = {
+				army = {
+					small = "GFX_idea_bul_konstantin_muraviev"
+				}
+			}
+		}
 
-	
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = BUL_konstantin_muraviev
+				allowed = {
+					NOT = {
+						has_dlc = "Battle for the Bosporus"
+					}
+					original_tag = BUL
+				}
+				traits = {
+					compassionate_gentleman 
+				}
+			}
+			name = BUL_konstantin_muraviev
+			portraits = {
+				army = {
+					small = "GFX_idea_generic_political_advisor_europe_1"
+				}
+			}
+		}
+	}
+
+	BUL_stefan_stefanov = {
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_stefan_stefanov
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				
+			}
+			traits = {
+				industry_reformer 
+			}
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		name = BUL_stefan_stefanov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_stefan_stefanov"
+			}
+		}
+	}
 	
 	BUL_dimitrana_ivanova = {
 		name = BUL_dimitrana_ivanova
@@ -1729,9 +1809,7 @@ characters = {
 				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 			}
-			available = {
-				
-			}
+			
 			traits = {
 				captain_of_industry 
 			}

@@ -636,7 +636,6 @@ characters={
 		}		
 	}
 
-	
 
 	AST_herbert_v_evatt={
 		name=AST_herbert_v_evatt

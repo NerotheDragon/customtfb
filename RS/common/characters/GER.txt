@@ -169,7 +169,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				
+					
 			}
 			traits = {
 				army_armored_3
@@ -1136,7 +1136,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-			
+				
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -1477,8 +1477,6 @@ characters={
 
 	
 
-	
-
 	GER_joseph_goebbels={
 		name=GER_joseph_goebbels
 		portraits={
@@ -1655,9 +1653,7 @@ characters={
 		}
 	}
 
-	
-	
-	
+
 
 	GER_wilhelm_canaris={
 		name=GER_wilhelm_canaris

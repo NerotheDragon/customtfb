@@ -72,14 +72,7 @@
 					type = motorized_equipment
 					amount = 1000
 			}
-			add_equipment_to_stockpile = {
-					type = light_tank_equipment
-					amount = 560
-			}
-			add_equipment_to_stockpile = {
-					type = medium_tank_equipment
-					amount = 280
-			}
+			
 		}
 	}
 	focus = {

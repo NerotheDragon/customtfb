@@ -36,7 +36,25 @@ characters={
 		}
 	}
 
-	
+	ENG_oswald_mosley={
+		name=ENG_oswald_mosley
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_Britain_Oswald_Mosley.dds"
+			}
+			army={
+				small="GFX_idea_ENG_oswald_mosley"
+			}
+		}
+		
+		
+		country_leader={
+			ideology=fascism_ideology
+			traits={ champion_of_peace_1 economic_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 
 	ENG_harry_pollitt={
 		name=ENG_harry_pollitt
@@ -161,7 +179,7 @@ characters={
 		}
 	}
 
-	ENG_bernard_montgomery={
+	ENG_bernard_montgomery= {
 		name=ENG_bernard_montgomery
 		portraits={
 			army={
@@ -180,7 +198,7 @@ characters={
 				original_tag = ENG
 			}
 			available = {
-			
+				
 			}
 			
 			traits = {
@@ -928,7 +946,7 @@ characters={
 
 	# Alexander up there
 
-	
+
 
 	ENG_james_somerville={
 		name=ENG_james_somerville
@@ -946,7 +964,7 @@ characters={
 				original_tag = ENG
 			}
 			available = {
-			
+				
 			}
 			
 			traits = {
@@ -1590,9 +1608,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					NOT = {
-						
-					}
+					
 					has_government  = democratic 
 				}
 			}
@@ -1696,8 +1712,6 @@ characters={
 			}
 		}
 	}
-
-	
 
 	
 
@@ -1969,116 +1983,7 @@ characters={
 		}
 	}
 
-	ENG_corgis_1={
-		name=ENG_corgis_1
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_corgis_1
-			available  = {
-				has_government  = neutrality 
-				
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			visible  = {
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				face_licker 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	ENG_corgis_2={
-		name=ENG_corgis_2
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_corgis_2
-			available  = {
-				has_government  = neutrality 
-			
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			visible  = {
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				heels_nipper 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	ENG_corgis_3={
-		name=ENG_corgis_3
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_4"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_corgis_3
-			available  = {
-				has_government  = neutrality 
-				
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			visible  = {
-				has_country_leader  = {
-					name = "Elizabeth II"
-					ruling_only  = yes 
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				snuggler 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
+	
 
 	ENG_stewart_menzies={
 		name=ENG_stewart_menzies

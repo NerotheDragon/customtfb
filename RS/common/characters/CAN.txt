@@ -616,7 +616,7 @@ characters={
 
 	### POLITICAL ADVISORS ###	
 
-	
+
 	
 	CAN_robert_manion={
 		name=CAN_robert_manion
@@ -638,7 +638,7 @@ characters={
 					}
 					OR = {
 						has_completed_focus = CAN_strengthen_the_commonwealth_ties 
-						
+					
 					}
 				}
 				if = {

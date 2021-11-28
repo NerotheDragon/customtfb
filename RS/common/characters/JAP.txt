@@ -1382,7 +1382,7 @@ characters={
 
 	### POLITICAL ADVISORS ###
 
-
+	
 
 	JAP_kingoro_hashimoto={
 		name=JAP_kingoro_hashimoto

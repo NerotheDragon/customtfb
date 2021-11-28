@@ -54,44 +54,7 @@ characters={
 				large="GFX_portrait_fra_maurice_thorez"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = maurice_thorez
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				
-				not  = {
-					has_country_leader  = {
-						name  = "Philippe Pétain"
-						ruling_only  = yes 
-					}
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = communism 
-				}
-			}
-			on_add  = {
-				FRA_right_wing_riot_effect = yes 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
+		
 		
 		country_leader={
 			ideology=stalinism
