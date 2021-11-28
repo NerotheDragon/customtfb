@@ -845,13 +845,8 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.25
 				army_morale_factor = 0.15
 				pocket_penalty = -0.15
-				army_infantry_defence_factor = 0.1
-			}
-
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-			}
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
 		}
 
 		SPA_disjointed_carlist_juntas = {

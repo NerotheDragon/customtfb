@@ -1447,7 +1447,6 @@
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
-			is_in_faction_with = ITA
 		}
 		bypass = {
 		}
@@ -1475,11 +1474,6 @@
 	focus = {
 		id = SPA_the_duty_to_work
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}
@@ -1501,11 +1495,6 @@
 	focus = {
 		id = SPA_expand_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
 		}
 		bypass = {
 		}

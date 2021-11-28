@@ -19,7 +19,7 @@ technologies = {
 			support_equipment_1
 		}
 		
-		
+
 		path = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
@@ -136,13 +136,21 @@ technologies = {
 	
 	tech_engineers2 = {
 
-		engineer = {
+		engineer = {	
 			entrenchment  = 2
-			
-			fort = {
-				defence = 0.10
-				attack = 0.10
+			river = {
+				attack = 0.1
 			}
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers_pontoon
+			research_cost_coeff = 1
 		}
 
 		enable_equipment_modules = {
@@ -155,18 +163,12 @@ technologies = {
 			medium_flame_tank
 			heavy_flame_tank
 		}
-		
-		
-		path = {
-			leads_to_tech = tech_engineers3
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
@@ -194,13 +196,46 @@ technologies = {
 		}
 	}
 	
+	tech_engineers_pontoon = {
+
+		engineer = {
+			river = {
+				attack = 0.15
+			}
+			need = {
+				support_equipment = 10
+				infantry_equipment = 10
+		    }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = pontoon_bridges_tt
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 5 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
 	tech_engineers3 = {
 
 		engineer = {
 			entrenchment  = 2
-			river = {
-				attack = 0.1	
-				defence = 0.10
+			fort = {	
+				defence = 0.15
+			}
+			river = {	
+				attack = 0.05
+				movement = 0.1
 			}
 		}
 
@@ -228,8 +263,14 @@ technologies = {
 				attack = 0.10
 			}
 		}
+
 		path = {
 			leads_to_tech = tech_engineers4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_engineers_urban
 			research_cost_coeff = 1
 		}		
 
@@ -237,7 +278,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
@@ -265,15 +306,55 @@ technologies = {
 		}
 	}
 	
+	tech_engineers_urban = {
+
+		fortification_damage = 0.5
+		fortification_collateral_chance = 0.5
+		
+		engineer = {
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			dense_urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 7 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+	}
+	
 	tech_engineers4 = {
+
 
 		engineer = {
 			entrenchment  = 2
 			urban = {
-				attack = 0.1	
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
+			}
+			dense_urban = {
+				attack = 0.25
+				defence = 0.15
+			}
+			town = {
+				attack = 0.1
+				defence = 0.15
 			}
 		}
+
 		light_flame_tank = {
 			urban = {
 				attack = 0.1
@@ -298,11 +379,12 @@ technologies = {
 				attack = 0.10
 			}
 		}
+
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1945 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -335,8 +417,8 @@ technologies = {
 		enable_subunits = {
 			recon
 			mot_recon
-			armored_car_recon
 			light_tank_recon
+			armored_car_recon
 		}
 		
 		path = {
@@ -387,8 +469,113 @@ technologies = {
 	
 	tech_recon2 = {
 
-		category_recon = {
+		recon = {
 			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		mot_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		light_tank_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		armored_car_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
 		}
 		
 		path = {
@@ -400,7 +587,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1939 }
+			position = { x = 2 y = @1938 }
 		}
 		
 		categories = {
@@ -430,9 +617,115 @@ technologies = {
 	
 	tech_recon3 = {
 
-		category_recon = {
+		recon = {
 			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
 		}
+		mot_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		light_tank_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		armored_car_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		
 		path = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
@@ -442,7 +735,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 2 y = @1939 }
 		}
 		
 		categories = {
@@ -471,15 +764,120 @@ technologies = {
 	}
 	tech_recon4 = {
 
-		category_recon = {
+		recon = {
 			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		mot_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		light_tank_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
+		armored_car_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
 		}
 
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 2 y = @1940 }
 		}
 		
 		categories = {
@@ -576,7 +974,8 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			max_organisation = 10
 		}
 		
 		
@@ -589,7 +988,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1939 }
+			position = { x = 4 y = @1938 }
 		}
 		
 		categories = {
@@ -610,7 +1009,8 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			max_organisation = 10
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -621,7 +1021,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1942 }
+			position = { x = 4 y = @1939 }
 		}
 		
 		categories = {
@@ -641,14 +1041,15 @@ technologies = {
 	tech_military_police4 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			max_organisation = 10
 		}
 
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1945 }
+			position = { x = 4 y = @1940 }
 		}
 		
 		categories = {
@@ -712,13 +1113,13 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.10
 			equipment_capture_factor = 0.05
 		}
+		
 		enable_equipment_modules = {
 			easy_maintenance
 		}
-		
 		
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -729,7 +1130,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1939 }
+			position = { x = 6 y = @1938 }
 		}
 		
 		categories = {
@@ -760,9 +1161,10 @@ technologies = {
 	tech_maintenance_company3 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.10
 			equipment_capture_factor = 0.05
 		}
+		
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
@@ -772,7 +1174,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1942 }
+			position = { x = 6 y = @1939 }
 		}
 		
 		categories = {
@@ -802,7 +1204,7 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.10
 			equipment_capture_factor = 0.05
 		}
 
@@ -810,7 +1212,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1945 }
+			position = { x = 6 y = @1940 }
 		}
 		
 		categories = {
@@ -889,7 +1291,7 @@ technologies = {
 	tech_field_hospital2 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.10
+			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
 		}
 		
@@ -902,7 +1304,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1939 }
+			position = { x = 8 y = @1938 }
 		}
 		
 		categories = {
@@ -934,7 +1336,7 @@ technologies = {
 	tech_field_hospital3 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
 		}
 		path = {
@@ -946,7 +1348,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1942 }
+			position = { x = 8 y = @1939 }
 		}
 		
 		categories = {
@@ -977,7 +1379,7 @@ technologies = {
 	tech_field_hospital4 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
 		}
 
@@ -985,7 +1387,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1945 }
+			position = { x = 8 y = @1940 }
 		}
 		
 		categories = {
@@ -1018,6 +1420,8 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+			logistics_company_mot
+			logistics_company_horse
 		}
 		
 		path = {
@@ -1069,10 +1473,17 @@ technologies = {
 	tech_logistics_company2 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.03
 			fuel_consumption_factor = -0.05
 		}
-		
+		logistics_company_mot = {
+			supply_consumption_factor = -0.05
+			fuel_consumption_factor = -0.05
+		}
+		logistics_company_horse = {
+			supply_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
+		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1083,7 +1494,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1939 }
+			position = { x = 10 y = @1938 }
 		}
 		
 		categories = {
@@ -1120,9 +1531,18 @@ technologies = {
 	tech_logistics_company3 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.03
 			fuel_consumption_factor = -0.05
 		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.05
+			fuel_consumption_factor = -0.05
+		}
+		logistics_company_horse = {
+			supply_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
+		}
+		
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
@@ -1132,7 +1552,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1942 }
+			position = { x = 10 y = @1939 }
 		}
 		
 		categories = {
@@ -1163,7 +1583,15 @@ technologies = {
 	tech_logistics_company4 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.03
+			fuel_consumption_factor = -0.05
+		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.05
+			fuel_consumption_factor = -0.05
+		}
+		logistics_company_horse = {
+			supply_consumption_factor = -0.02
 			fuel_consumption_factor = -0.05
 		}
 
@@ -1171,7 +1599,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1945 }
+			position = { x = 10 y = @1940 }
 		}
 		
 		categories = {
@@ -1244,7 +1672,9 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.10
+			max_organisation = 15
+			default_morale = 0.2
 		}
 		
 		
@@ -1257,7 +1687,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1939 }
+			position = { x = 12 y = @1938 }
 		}
 		
 		categories = {
@@ -1289,8 +1719,11 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.10
+			max_organisation = 15
+			default_morale = 0.2
 		}
+		
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
@@ -1300,7 +1733,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1942 }
+			position = { x = 12 y = @1939 }
 		}
 		
 		categories = {
@@ -1331,14 +1764,16 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.10
+			max_organisation = 15
+			default_morale = 0.2
 		}
 
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1945 }
+			position = { x = 12 y = @1940 }
 		}
 		
 		categories = {
@@ -1373,10 +1808,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1910
+		start_year = 1918
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1918 }
+			position = { x = -14 y = 18 }
 		}
 
 		path = {
@@ -1425,7 +1860,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 3 }
+			position = { x = -12 y = 25 }
 		}
 		
 		categories = {
@@ -1460,7 +1895,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1939 }
+			position = { x = -10 y = 18 }
 		}
 		
 		categories = {
@@ -1513,7 +1948,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 3 }
+			position = { x = -12 y = 21 }
 		}
 		
 		categories = {
@@ -1547,5 +1982,24 @@ technologies = {
 			}
 		}
 	}
+
+	tech_nkvd = {
+
+		military_police = {
+			casualty_trickleback = -0.20
+			max_organisation = 20
+			default_morale = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+	}
+
 
 }

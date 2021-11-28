@@ -473,7 +473,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trait_reckless }
+			traits={ armor_officer urban_assault_specialist ranger }
 			skill=1
 			attack_skill=1
 			defense_skill=1
