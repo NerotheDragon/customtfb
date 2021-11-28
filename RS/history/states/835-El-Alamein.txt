@@ -1,0 +1,28 @@
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			
+
+		}
+		
+		add_core_of = EGY
+
+		victory_points = {
+			1071 1 
+		}
+
+	}
+
+	provinces={
+		992 1071 4145 11910 
+	}
+	manpower=8345
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=wasteland
+}
