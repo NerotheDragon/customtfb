@@ -2039,10 +2039,10 @@ focus_tree = {
 				name = tnk_bonus
 				bonus = 0.75
 				uses = 1
-				technology = ger_p4_tank_2
-				technology = ger_p4_tank_3
-				technology = ger_p3_tank_2
-				technology = ger_p3_tank_3
+				technology = basic_medium_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = modern_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tnk_bonus
@@ -2123,36 +2123,10 @@ focus_tree = {
 				name = tnk_bonus
 				bonus = 0.50
 				uses = 3
-				technology = ger_p34_td_1
-				technology = ger_p4_td_1
-				technology = ger_p3_td_1
-				technology = ger_p3_td_2
-				technology = ger_p5_td_1
-				technology = ger_heavy_td_1
-				technology = ger_heavy_td_2
-				technology = ger_light_td_1
-				technology = ger_light_td_2
-				technology = ger_cze_td_1
-				technology = ger_cze_td_2
-			}
-			add_tech_bonus = {
-				name = tnk_bonus
-				bonus = 0.50
-				uses = 2
-				technology = ger_p3_spg_1
-				technology = ger_p4_spg_1
-				technology = ger_p4_spg_2
-				technology = ger_light_spg_1
-				technology = ger_light_spg_2
-				technology = ger_cze_spg_1
-			}
-			add_tech_bonus = {
-				name = tnk_bonus
-				bonus = 0.50
-				uses = 2
-				technology = ger_assault_gun_1
-				technology = ger_assault_gun_2
-				technology = ger_assault_gun_3
+				technology = basic_medium_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = modern_medium_tank_chassis
 			}
 		}
 	}	

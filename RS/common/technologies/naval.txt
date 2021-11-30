@@ -697,6 +697,10 @@ technologies = {
 			leads_to_tech = landing_craft 
 			research_cost_coeff = 1
 		}
+
+		enable_equipments = {
+			floating_harbor_equipment_1
+		}
 		
 		research_cost = 1.5
 		start_year = 1922

@@ -6,4 +6,4 @@ tags={
 }
 name="tfbfix"
 picture="thumbnail.png"
-supported_version="1.11.1"
+supported_version="1.11.2"

@@ -2780,14 +2780,7 @@
 				name = ger_bonus
 				bonus = 0.50
 				uses = 2
-				technology = axis_ger_p3_tank_3
-				technology = axis_ger_p3_tank_4
-				technology = axis_ger_heavy_tank_1
-				technology = axis_ger_heavy_tank_2
-				technology = axis_ger_heavy_tank_3
-				technology = axis_ger_p4_tank_3
-				technology = axis_ger_p4_tank_4
-				technology = axis_ger_p4_tank_5
+				technology = improved_medium_tank_chassis
 			}
 		}
 	}

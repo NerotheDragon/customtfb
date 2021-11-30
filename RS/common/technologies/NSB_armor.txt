@@ -648,7 +648,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = main_battle_tank_chassis
+			leads_to_tech = modern_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -685,19 +685,21 @@ technologies = {
 		}
 	}
 
-	main_battle_tank_chassis = { #E-50
+	modern_medium_tank_chassis = { #Panther
 
 		enable_equipments = {
-			modern_tank_chassis_1
-			modern_tank_destroyer_chassis_1
-			modern_tank_artillery_chassis_1
-			modern_tank_aa_chassis_1
-		}
-		enable_subunits = {
-			modern_armor
+			medium_tank_chassis_4
+			medium_tank_destroyer_chassis_4
+			medium_tank_artillery_chassis_4
+			medium_tank_aa_chassis_4
 		}
 
-		research_cost = 2.5
+		path = {
+			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
 		start_year = 1945
 
 		folder = {
@@ -709,18 +711,18 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
 				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
 			}
 		}
 
@@ -729,7 +731,6 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-
 
 	basic_heavy_tank_chassis = { #Grosstraktor
 
@@ -884,7 +885,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = main_battle_tank_chassis
+			leads_to_tech = modern_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -894,6 +895,53 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 5 y = @1943 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	modern_heavy_tank_chassis = { #King Tiger
+
+		enable_equipments = {
+			heavy_tank_chassis_4
+			heavy_tank_destroyer_chassis_4
+			heavy_tank_artillery_chassis_4
+			heavy_tank_aa_chassis_4
+		}
+
+		path = {
+			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 5 y = @1945 }
 		}
 
 		ai_will_do = {

@@ -443,6 +443,8 @@
  aviation_fuel5:0 "Aviation Fuel 5 - 125 Octane"
  water_methanol:0 "Water Methanol Injection - MW50"
  bad_terrain_armored_warfare:0 "Adaptable Light Armor Designs"
+ modern_medium_tank_chassis:0 "1945 Medium"
+ modern_heavy_tank_chassis:0 "1945 Heavy"
  
  #### AIR ####
  fighter_equipment_4:0 "Fighter IV"

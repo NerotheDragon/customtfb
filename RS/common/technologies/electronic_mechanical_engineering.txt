@@ -428,6 +428,7 @@ technologies = {
 			}
 			soft_attack = 0.05
 			hard_attack = 0.05
+			reliability = 0.05
 		}
 		
 		research_cost = 2.0
@@ -465,6 +466,7 @@ technologies = {
 			}
 			soft_attack = 0.05
 			hard_attack = 0.05
+			reliability = 0.05
 		}
 		
 		research_cost = 2.0
